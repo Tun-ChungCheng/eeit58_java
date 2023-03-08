@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <style>
+      /* 透過 <a>標籤，設定 字型大小 & 取消底線 text-decoration */
+      a {
+        font-size: 72px;
+        text-decoration: none;
+      }
+
+      /* (link) 設定超連結未連結時的顏色 YellowGreen */
+      a:link {
+        color: blue;
+      }
+
+      /* (visited) 設定超連結已連結過的顏色 LightCoral */
+      a:visited {
+        color: red;
+      }
+
+      /* (hover) 設定滑鼠移至連結上方時的顏色 LightSkyBlue */
+      a:hover {
+        color: lightblue;
+      }
+      /* (active) 設定超連結點選連結當下的顏色 black */
+      a:active {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h4>Pseudo-classes, 虛擬類別</h4>
+    <h4>元素存在，且元素的樣式會隨使用者操作改變；</h4>
+    <h4>或元素存在，但無法透過 "simple selectors" 的方法選取的</h4>
+    <hr />
+
+    <p>
+      <a
+        href="https://www.w3schools.com/css/css_pseudo_classes.asp"
+        target="_blank"
+        rel="noopener noreferrer"
+        >CSS Pseudo-classes</a
+      >
+    </p>
+    <p>
+      <a
+        href="https://www.w3.org/TR/2018/REC-selectors-3-20181106/#pseudo-classes"
+        >6.6. Pseudo-classes</a
+      >
+    </p>
+    <p><a href="https://www.123">test</a></p>
+  </body>
+</html>

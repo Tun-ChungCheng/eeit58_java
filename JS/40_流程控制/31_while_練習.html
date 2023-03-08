@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <script>
+            // 10. 計算從1加到10數值為多少
+
+            // 20. 網頁必須輸入通關密碼1234才會停止
+            let sum = 0
+            let i = 1
+
+            while (i <= 10) {
+                sum += i++
+            }
+
+            console.log(sum)
+
+            let ans
+            do {
+                ans = window.prompt('網頁必須輸入通關密碼1234才會停止')
+            } while (ans !== '1234')
+        </script>
+    </body>
+</html>

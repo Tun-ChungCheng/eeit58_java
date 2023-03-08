@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/position.css" />
+        <style>
+            /* 01. 在 #greendiv 加上 position: absolute; 以及 top: 50px; */
+
+            /* 02. 在 .demo 加上 position:relative; 觀察畫面變化 */
+            #greendiv {
+                position: absolute;
+                top: 50px;
+            }
+
+            .demo {
+                position: relative;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>position：absolute 絕對位置</h3>
+        <h3>
+            絕對位置，會去找【父元素(最近的一個) position: relative ;
+            沒有的話才會找到 body 】
+        </h3>
+
+        <div class="demo">
+            <div id="reddiv">Red 200*200</div>
+            <div id="greendiv">
+                Green 150*300；<br />
+                position: absolute;<br />
+                top: 50px;
+            </div>
+            <div id="bluediv">Blue</div>
+        </div>
+    </body>
+</html>

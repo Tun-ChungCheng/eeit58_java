@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <!-- 顯示效果的地方 -->
+        <p id="pSquare">A</p>
+        <hr />
+        <p id="pTriangle">B</p>
+        <hr />
+        <pre id="pTimes">C</pre>
+
+        <script>
+            // 10. 使用 for 迴圈，列印出這個月份從1號到目前系統日
+            console.log('10. 使用 for 迴圈，列印出這個月份從1號到目前系統日')
+            const today = new Date().getDate()
+            for (let i = 1; i <= today; i++) {
+                console.log(i + '號')
+            }
+
+            // 20. 使用 for 迴圈，逐一取得陣列裡面的元素
+            console.log('20. 使用 for 迴圈，逐一取得陣列裡面的元素')
+            var weekList = [
+                'sunday',
+                'monday',
+                'tuesday',
+                'wednesday',
+                'thursday',
+                'friday',
+                'saturday',
+            ]
+
+            for (let i = 0; i < weekList.length; i++) {
+                console.log(weekList[i])
+            }
+
+            // 30. 使用 for 迴圈，計算從 1 加到 10
+            console.log('30. 使用 for 迴圈，計算從 1 加到 10')
+            let sum = 0
+
+            for (let i = 1; i <= 10; i++) {
+                sum += i
+            }
+
+            console.log(sum)
+
+            // 40. 雙層迴圈 - 長方型星星 #pSquare
+
+            // ****
+            // ****
+            // ****
+            // ****
+            // ****
+            // ****
+            const COLUMN = 4
+            const ROW = 6
+
+            for (let i = 0; i < (COLUMN + 1) * ROW; i++) {
+                if (i % (COLUMN + 1)) document.write('*')
+                else document.write('<br />')
+            }
+
+            // 50. 雙層迴圈 - 三角形 #pTriangle
+            // *
+            // **
+            // ***
+            // ****
+            document.write('<br />')
+            document.write('<br />')
+
+            const LAYER = 4
+
+            for (let i = 0; i < LAYER; i++) {
+                for (let j = 0; j <= i; j++) {
+                    document.write('*')
+                }
+                document.write('<br />')
+            }
+
+            // 60. 列印九九乘法表 (tab為 "&#9;") + <pre> 標籤 #pTimes
+
+            document.write('<table></table>')
+            for (let i = 1; i <= 9; i++) {
+                for (let j = 1; j <= 9; j++) {
+                    document.write(i + ' * ' + j + ' = '
+                document.write('<br />')
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <style>
+            #img1 {
+                /*試試看用百分比的方式設定寬度，查看變化*/
+                width: 50%;
+            }
+
+            #img2 {
+                /*試試看將圖片的寬度設定為477px，查看變化*/
+                width: 477px;
+            }
+
+            .fit {
+                /*試試看將寬度設定為400px; 高度設定為100px; */
+                width: 400px;
+                height: 100px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img id="img1" src="img/sunny.jpg" />
+        <img id="img2" src="img/sunny.jpg" />
+        <hr />
+
+        <h1>Origin</h1>
+        <img class="fit" src="img/sunny.jpg" />
+        <h1>Cover</h1>
+        <img class="fit" style="object-fit: cover" src="img/sunny.jpg" />
+        <h1>Contain</h1>
+        <img class="fit" style="object-fit: contain" src="img/sunny.jpg" />
+        <h1>None</h1>
+        <img class="fit" style="object-fit: none" src="img/sunny.jpg" />
+        <h1>Scale-down</h1>
+        <img class="fit" style="object-fit: scale-down" src="img/sunny.jpg" />
+
+        <!-- 試試object-fit -->
+    </body>
+</html>

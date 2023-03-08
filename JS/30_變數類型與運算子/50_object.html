@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h4>JavaScript Objects</h4>
+        <p>
+            <a href="https://www.w3schools.com/js/js_object_definition.asp"
+                >https://www.w3schools.com/js/js_object_definition.asp</a
+            >
+        </p>
+
+        <script>
+            // 10. 使用 {} create object；object 可以包含屬性和方法
+            //     { key1:value1, key2:value2.. }
+            obj = {
+                k1: 'v1',
+                k2: 'v2',
+            }
+            // 30. 透過 .  可以 取得 | 新增 object 的屬性
+            console.log(obj.k1)
+            console.log(obj.k2)
+            console.log((obj.k3 = 'v3'))
+
+            // 40. 透過 [] 可以 取得 | 新增 object 的屬性
+            console.log(obj['k1'])
+            console.log(obj['k2'])
+            console.log((obj['k3'] = 'vv3'))
+
+            const a = ['a', 'b']
+            // a[0] = 'c'
+            a = 'c'
+            console.log(a)
+        </script>
+    </body>
+</html>

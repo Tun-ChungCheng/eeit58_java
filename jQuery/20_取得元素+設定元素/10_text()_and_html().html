@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+        <style>
+            button[id='btnLogin'] {
+                color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>請點選登入</p>
+        <button id="btnLogin">登入</button>
+
+        <script>
+            btnLogin.onclick = function () {
+                // 10. 取得 p 元素的內容
+                console.log($('p').text())
+                // 20. 設定 p 元素的內容
+                console.log($('p').text('設定 p 元素的內容'))
+                // 30. $().text() 和 $().html() 的差異
+                console.log($('p').html('<button id="btnLogin">登入</button>'))
+            }
+        </script>
+    </body>
+</html>

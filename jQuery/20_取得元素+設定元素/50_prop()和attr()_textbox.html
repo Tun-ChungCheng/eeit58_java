@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <label for="userName">文字輸入方框:</label>
+        <input id="userName" type="text" /><br /><br />
+        <button id="btnDemo">測試 $().prop() 和 $().attr()</button>
+        <hr />
+
+        <div>
+            <h4>測試區域 :</h4>
+            <p>測試 prop : <span id="testProp"> </span></p>
+            <p>測試 attr : <span id="testAttr"> </span></p>
+        </div>
+
+        <script>
+            // 10. 點選按鈕後，分別透過 $().prop() 和 $().attr() 取得輸入方框的值
+            $('#btnDemo').click(() => {
+                console.log($(':input').text())
+
+                console.log($('#testProp').prop('id'))
+
+                console.log($('#testAttr').attr('id'))
+            })
+        </script>
+    </body>
+</html>

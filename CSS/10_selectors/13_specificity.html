@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 試著在這裡設定底下css樣式，
+        ##每一個步驟執行完以後，請先查看畫面顏色的變化!! -->
+
+    <style>
+      /* 使用 * 設定背景底色 */
+      * {
+        background-color: aliceblue;
+      }
+
+      /* 使用 標籤(tag name) 挑選元素並設定背景底色 */
+      h1 {
+        background-color: gray;
+      }
+      /* 使用 .class 挑選元素並設定背景底色和文字顏色 */
+      .pokemon {
+        color: skyblue !important;
+        background-color: blanchedalmond;
+      }
+      /* 使用 #id 挑選元素並設定背景底色 */
+      #pikachu {
+        color: yellow;
+        background-color: black;
+      }
+      /* 使用 inline style 設定背景底色 */
+
+      /* 使用 !important 設定背景底色 */
+      .pokemon {
+        color: black;
+      }
+      /* 元素屬於兩個或兩個以上的類別 */
+    </style>
+  </head>
+
+  <body>
+    <h1 id="pikachu">皮卡丘</h1>
+    <h1 class="pokemon">卡比獸</h1>
+    <h1 class="pokemon" style="color: red">小火龍</h1>
+  </body>
+</html>

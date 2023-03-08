@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>border-radius</title>
+        <style>
+            div {
+                background-color: lightgreen;
+            }
+
+            .normalBorder {
+                /* 用border畫出四邊邊框 */
+
+                /* 簡寫 border: width || style || color  */
+                border: 3px solid blue;
+            }
+
+            .leftBorder {
+                /* 用border畫出左邊框 */
+
+                /* border-width 簡寫
+               一個值: 全部
+               兩個值: 上下 左右
+               三個值: 上 左右 下
+               四個值: 上 右 下 左 (順時針方向) */
+                border-width: 0 0 0 3px;
+                border-style: solid;
+                border-color: red;
+            }
+
+            .multiStyle {
+                /* 用border畫出四邊邊框，且四邊為不同style */
+
+                /* border-style 簡寫
+               一個值: 全部
+               兩個值: 上下 左右
+               三個值: 上 左右 下
+               四個值: 上 右 下 左 (順時針方向) */
+                border-style: dashed solid ridge hidden;
+            }
+
+            .leftRadiusBorder {
+                /* 直接選擇某個角 */
+                /* 用border-top-left-radius改變左上邊框的角(可以填入長度，或者百分比) */
+            }
+
+            .radiusBorder {
+                /* 用border-radius改變四邊邊框的角(可以填入長度，或者百分比) */
+
+                /* border-radius 簡寫
+               一個值: 全部
+               兩個值: 左上+右下 右上+左下
+               三個值: 左上 右上+左下 右下
+               四個值: 左上 右上 右下 左下 (順時針方向) */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="normalBorder">
+            <p>一般框線</p>
+        </div>
+        <br />
+        <div class="leftBorder">
+            <p>左邊線</p>
+        </div>
+        <br />
+        <div class="multiStyle">
+            <p>多樣式</p>
+        </div>
+        <br />
+        <div class="leftRadiusBorder">
+            <p>左圓角</p>
+        </div>
+        <br />
+        <div class="radiusBorder">
+            <p>圓角</p>
+        </div>
+    </body>
+</html>

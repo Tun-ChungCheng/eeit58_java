@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <h4>jQuery()</h4>
+        <p>
+            <a href="https://api.jquery.com/jQuery/"
+                >https://api.jquery.com/jQuery/</a
+            >
+        </p>
+        <h4>jQuery Selectors</h4>
+        <p>
+            <a href="https://www.w3schools.com/jquery/jquery_ref_selectors.asp"
+                >https://www.w3schools.com/jquery/jquery_ref_selectors.asp</a
+            >
+        </p>
+
+        <hr />
+
+        <h4>利用CSS樣式選擇器選擇元素</h4>
+        <ul id="ulist">
+            <li>tag name</li>
+            <li>#id</li>
+            <li>.class</li>
+            <li>其他</li>
+        </ul>
+
+        <h4>jQuery函式庫可以做什麼？</h4>
+        <ul>
+            <li>尋找元素</li>
+            <li>取得/變更DOM</li>
+            <li>掛載事件</li>
+            <li>其他</li>
+        </ul>
+
+        <script>
+            // 10. 挑選 h4 標籤
+            $('h4').map((idx) => {
+                console.log($('h4')[idx])
+            })
+            // 20. 透過 #ulist 選擇 ul 標籤
+            console.log($('#ulist')[0])
+            // 30. 挑選 li 標籤
+            $('li').map((idx) => {
+                console.log($('li')[idx])
+            })
+
+            // 60. jQuery 函式庫是否有針對 <input> 提供特殊的選擇方式？
+        </script>
+    </body>
+</html>

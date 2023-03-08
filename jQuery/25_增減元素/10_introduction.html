@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <h4>Category: DOM Insertion, Inside</h4>
+        <p>
+            <a
+                href="https://api.jquery.com/category/manipulation/dom-insertion-inside/"
+                >https://api.jquery.com/category/manipulation/dom-insertion-inside/</a
+            >
+        </p>
+        <h4>Category: DOM Insertion, Outside</h4>
+        <p>
+            <a
+                href="https://api.jquery.com/category/manipulation/dom-insertion-outside/"
+                >https://api.jquery.com/category/manipulation/dom-insertion-outside/</a
+            >
+        </p>
+        <h4>Category: DOM Insertion, Around</h4>
+        <p>
+            <a
+                href="https://api.jquery.com/category/manipulation/dom-insertion-around/"
+                >https://api.jquery.com/category/manipulation/dom-insertion-around/</a
+            >
+        </p>
+        <hr />
+
+        <button id="btnAdd">附加清單</button>
+        <hr />
+        <div>
+            <h4>底下是清單</h4>
+            <ol>
+                <li>LINE Pay</li>
+                <li>Apple Pay</li>
+                <li>信用卡</li>
+            </ol>
+        </div>
+
+        <script>
+            btnAdd.onclick = function () {
+                // 10. $().append()：多增加一個清單項目 悠遊卡
+                // $('ol').append('<li>悠遊卡</li>')
+
+                // 20. 上一個步驟點選一次增加一個
+                //    該怎麼做可以變成點選一次清單數量翻倍?
+                //    ex. 3 > 6 > 12 > 24 ...
+                const cloneList = $('ol li').clone()
+                $('ol').append(cloneList)
+            }
+        </script>
+    </body>
+</html>

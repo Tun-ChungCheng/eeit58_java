@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h4>指定的秒數，做指定的事情</h4>
+        <p>
+            <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp"
+                >https://www.w3schools.com/jsref/met_win_setinterval.asp</a
+            >
+        </p>
+
+        <script>
+            var cnt = 0
+
+            function apple() {
+                cnt += 1
+                console.log(` apple() ==>  ${cnt} `)
+            }
+
+            // 10. 放入  apple
+            // setInterval(apple)
+            // 20. 放入 'apple()'
+            // setInterval('apple()')
+
+            // 30. 放入  apple()
+            // setInterval(apple())
+
+            // 40. 呼叫 setInterval 時改為直接放入 function
+            setInterval(function apple() {
+                cnt += 1
+                console.log(` apple() ==>  ${cnt} `)
+            })
+        </script>
+    </body>
+</html>

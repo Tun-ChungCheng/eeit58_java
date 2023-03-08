@@ -1,0 +1,10 @@
+div {
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+}
+
+div>button {
+    margin: 20px;
+    padding: 10px;
+}

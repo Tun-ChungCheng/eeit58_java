@@ -1,0 +1,21 @@
+.demo {
+    background-color: #FF9933;
+}
+
+#reddiv {
+    background-color: #FF0000;
+    width: 200px;
+    height: 200px;
+}
+
+#greendiv {
+    background-color: #00FF00;
+    width: 150px;
+    height: 300px;
+}
+
+#bluediv {
+    background-color: #0000FF;
+    width: 300px;
+    height: 700px;
+}

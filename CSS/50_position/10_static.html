@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/position.css" />
+        <style>
+            /* 在 #reddiv 加入 top:50px 樣式，畫面是否會改變? */
+            #reddiv {
+                position: relative;
+                top: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>
+            position：static
+            <br />
+            一個元素的position預設值為static，所以加上 top、bottom、left、right
+            屬性不會造成任何影響
+        </h3>
+
+        <div class="demo">
+            <div id="reddiv">Red</div>
+            <div id="greendiv">Green</div>
+            <div id="bluediv">Blue</div>
+        </div>
+    </body>
+</html>

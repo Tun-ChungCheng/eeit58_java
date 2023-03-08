@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <style>
+            /* 01. 撰寫當滑鼠經過 id 為 reddiv 開頭的元素，把背景顏色改為黃色*/
+            div[id^='reddiv']:hover {
+                background-color: yellow;
+            }
+
+            /* 02. 挑選 #reddiv_B 設定 display:none */
+            #reddiv_B:hover {
+                display: none;
+            }
+            /* 03. 挑選 #reddiv_C 設定 visibility:hidden */
+            #reddiv_C:hover {
+                visibility: hidden;
+            }
+            /* 04. 撰寫當滑鼠經過 #reddiv_B 加上 display: block
+               或經過 #reddiv_C 時，加上 visibility: visible，
+               看看是否有效果? */
+        </style>
+    </head>
+
+    <body>
+        <h3>display:block 區塊，元素的寬度預設會撐到最大。</h3>
+        <div class="demo">
+            <div id="reddiv_A">Red A</div>
+            <div id="greendiv_A">Green</div>
+            <div id="bluediv_A">Blue</div>
+        </div>
+
+        <hr />
+
+        <h3>display:none 直譯：沒有東西在這裡</h3>
+        <div class="demo">
+            <div id="reddiv_B">Red B</div>
+            <div id="greendiv_B">Green</div>
+            <div id="bluediv_B">Blue</div>
+        </div>
+
+        <h3>visibility:hidden 直譯：藏起來</h3>
+        <div class="demo">
+            <div id="reddiv_C">Red C</div>
+            <div id="greendiv_C">Green</div>
+            <div id="bluediv_C">Blue</div>
+        </div>
+    </body>
+</html>

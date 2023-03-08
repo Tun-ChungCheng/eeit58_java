@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            /* 01. 改變滑鼠經過 radio 的樣式 */
+            input[type='radio'] {
+                cursor: pointer;
+            }
+
+            /* 02-01. :valid 驗證通過時的樣式設定 */
+            input[type='tel']:valid,
+            input[type='text']:valid,
+            input[type='email']:valid {
+                background-color: lightgreen;
+            }
+            /* 02-02. :invalid 驗證不通過時的樣式設定 */
+            input[type='tel']:invalid,
+            input[type='text']:invalid,
+            input[type='email']:invalid {
+                background-color: lightcoral;
+            }
+            /* 03-01. 驗證通過時 輸入框後面顯示 ✓ */
+            input[type='tel']:valid + span::after,
+            input[type='text']:valid + span::after,
+            input[type='email']:valid + span::after {
+                content: '✓';
+                color: green;
+            }
+            /* 03-02. 驗證不通過時 輸入框後面顯示 ✖ */
+            input[type='tel']:invalid + span::after,
+            input[type='text']:invalid + span::after,
+            input[type='email']:invalid + span::after {
+                content: '✖';
+                color: red;
+            }
+
+            /* 04-01. 設定取得焦點的背景顏色greenyellow */
+            input:focus {
+                background-color: greenyellow;
+            }
+
+            /* 04-02. 設定勾選時 label 顏色 blue */
+            input[type='checkbox']::checked + label {
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <!-- 照上方CSS設定 -->
+            <!-- 01. 產生 單選按鈕元素 -->
+
+            <!-- 02. 產生 可以輸入 email 的方框 以及 -->
+            <!--     產生 可以輸入 文字  的方框，並限制只能輸入大寫英文 以及 -->
+            <!--     產生 可以輸入 電話  的方框，並限制為台灣手機號碼格式 以及 -->
+            <!--     產生 可以輸入 文字  的方框，並限制輸入身分證字號格式 -->
+            <input type="radio" />
+            <hr />
+            email: <input type="email" /><span></span>
+            <hr />
+            text: <input type="text" pattern="[A-Za-z]{0,9}" /><span></span>
+            <hr />
+            tel:
+            <input
+                type="tel"
+                placeholder="####-###-###"
+                pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+            /><span></span>
+            <hr />
+            ID:
+            <input
+                type="text"
+                pattern="[A-Z]{1}[0-9]{9}"
+                required
+            /><span></span>
+            <hr />
+            <input type="checkbox" />
+            <label for="">選我</label>
+        </form>
+    </body>
+</html>

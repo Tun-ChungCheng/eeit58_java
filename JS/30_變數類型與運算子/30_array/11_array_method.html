@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h4>JavaScript Array Methods</h4>
+        <p>
+            <a href="http://www.w3schools.com/js/js_array_methods.asp"
+                >http://www.w3schools.com/js/js_array_methods.asp</a
+            >
+        </p>
+
+        <script>
+            var weekList = [
+                'sunday',
+                'monday',
+                'tuesday',
+                'wednesday',
+                'thursday',
+                'friday',
+                'saturday',
+            ]
+
+            // 10. 陣列的取值和長度
+
+            // 12. 陣列.toString()
+            console.log(weekList.toString())
+            // 13. 陣列.join("#")
+            console.log(weekList.join('#'))
+
+            // 14. 移除陣列中第一份資料
+            console.log(weekList.shift())
+
+            // 15. 移除陣列中最後一份資料
+            console.log(weekList.pop())
+
+            // 16. 有哪三種方式可以加入資料到陣列中?
+            weekList.push('add')
+            weekList.unshift('unshift')
+            weekList.concat('concat')
+            console.log(weekList)
+            // console.log(weekList.concat('concate'))
+            // 20. 二維陣列的長度
+            var poker = []
+            poker[0] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+            console.log(poker[0].length)
+        </script>
+    </body>
+</html>

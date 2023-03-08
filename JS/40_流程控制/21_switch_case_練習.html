@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <!-- 10. 請設計一個介面，讓使用者輸入頻道代碼後，網頁可以顯示對應的頻道名稱 -->
+        <label for="remoteController">我是遙控器 </label>
+        <input id="remoteController" type="text" />
+        <input onclick="changeChannel()" type="button" value="轉台" />
+
+        <br />
+
+        <label id="iamtv">我是電視，您現在收看的是</label>
+        <label id="tv"></label>
+
+        <script>
+            // 20. 透過 switch case 設定底下對應項目
+            //     20 ==> TLC 旅遊生活頻道
+            //     65 ==> HBO
+            //     66 ==> 東森洋片台
+            //     非上述 ==> 頻道尚未建立
+            const remoteController = document.getElementById('remoteController')
+            const tv = document.getElementById('tv')
+
+            function changeChannel() {
+                const channel = remoteController.value
+                let channelName = null
+                switch (parseInt(channel)) {
+                    case 20:
+                        channelName = 'TLC 旅遊生活頻道'
+                        break
+                    case 65:
+                        channelName = 'HBO'
+                        break
+                    case 66:
+                        channelName = '東森洋片台'
+                        break
+                    default:
+                        channelName = ' 頻道尚未建立'
+                }
+                tv.innerText = ` ${channelName}`
+                remoteController.value = ''
+            }
+        </script>
+    </body>
+</html>

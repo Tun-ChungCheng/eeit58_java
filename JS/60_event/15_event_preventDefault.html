@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>event preventDefault 終止「預設」行為</title>
+    </head>
+
+    <body>
+        <!-- *測試時請注意，先將輸入法切換為英文模式 -->
+
+        <!-- 10. 提供一個可以讓使用者輸入文字的地方 -->
+        <input onkeypress="apple(event)" type="text" />
+        <script>
+            // 20. 限制使用者只能輸入小寫英文
+            //      * onkeypress
+
+            // 30. event.preventDefault();
+            function apple(x) {
+                console.clear()
+                if (x.keyCode >= 65 && x.keyCode < 97) x.preventDefault()
+                // window.alert('大寫')
+                console.log(x.key) //
+                console.log(x.keyCode) //
+                console.log(x.code) //
+                console.log(x.charCode) //
+            }
+        </script>
+    </body>
+</html>

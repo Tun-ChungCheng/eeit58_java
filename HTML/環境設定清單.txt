@@ -1,0 +1,56 @@
+A. vscode
+
+	vscode官網：https://code.visualstudio.com/
+
+	vscode套件擴充：
+		. Chinese (Traditional) Language Pack for Visual Studio Code
+		. Bracket Pair Colorization Toggler
+		. Auto Rename Tag
+		. Live server：它會幫使用者自動開啟一個服務器，保存的時候便自動刷新瀏覽器頁面
+		. open in browser
+		
+	-----
+
+B.  調整 vscode 設定
+
+	檔案 → 喜好設定 → 設定 → 文字編輯器 → 字型 → Font Size
+
+	檔案 → 喜好設定 → 設定 → 工作台 → 外觀 → Tree:Indent 
+
+	
+	-----
+
+C. 快速鍵 (Windows)：https://code.visualstudio.com/docs/getstarted/keybindings
+   
+   * 上述網址開啟後，請往下找到 Keyboard Shortcuts Reference 段落
+
+   * 底下的快速鍵如果和官方文件有落差，請依照官方版本為主!
+   * 底下的快速鍵如果和官方文件有落差，請依照官方版本為主!
+   * 底下的快速鍵如果和官方文件有落差，請依照官方版本為主!
+
+	. Ctrl + N：開啟新視窗
+	. Ctrl + S：存檔
+	. Ctrl + Z：回上一步
+	. Ctrl + R：切換工作區		
+	. Ctrl + P：開啟選單輸入檔案名稱直接開啟檔案		
+	. Ctrl + /：註解 或取消註解
+	. Ctrl + K + C：註解 或取消註解		
+
+	. Ctrl + D：可以針對範圍內所選取到相同的文字進行集體修改
+	. Ctrl + Shift + L 一次選取檔案內所有相同的文字
+
+	. Ctrl + H：尋找/取代當前視窗
+	. Ctrl + Shift + H：尋找/取代所有工作區檔案
+	. Ctrl + W：關閉當前視窗
+	. Ctrl + K + W：關閉所有視窗
+
+	. Alt + Shift + F：格式化(縮排對齊)整份文件
+	
+	. Alt + B：開啟網頁 (需安裝 open in browser 套件才有效果)
+	. Alt + L + O：開啟網頁 (需安裝 Live server 套件才有效果)
+		→ 請確認，電腦針對 *.html類型 預設開啟的應用程式是什麼? ←
+		→ 若擴充套件採用電腦中預設的應用程式打開需另外調整此設定 ←
+
+	. Alt + ↑ / ↓：可以搬移程式碼(可以多行)	
+	. Alt + Shift + ↑ / ↓：可以複製一行
+	. Alt + Shift + 滑鼠左鍵：直欄選取

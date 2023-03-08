@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        th {
+            height: 70px;
+        }
+        td {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>HTML value Attribute</h3>
+    <table>
+        <tr>
+            <th colspan="2">&lt;input&gt; 輸入框; value: 預設值</th>
+        </tr>
+        <tr>
+            <td>type="text":</td>
+            <td><input type="text" value="這是預設文字"></td>
+        </tr>
+        <tr>
+            <td>type="email":</td>
+            <td><input type="email" value="abc@example.com"></td>
+        </tr>
+        <tr>
+            <td>type="tel":</td>
+            <td><input type="tel" value="+886912345678"></td>
+        </tr>
+        <tr>
+            <td>type="password":</td>
+            <td><input type="password" value="12345678"></td>
+        </tr>
+        <tr>
+            <td>type="number":</td>
+            <td><input type="number" value="10"></td>
+        </tr>
+        <tr>
+            <th colspan="2">&lt;input&gt; 單/複選框; value: 選項的值(給server)</th>
+        </tr>
+        <tr>
+            <td>type="radio":</td>
+            <td><input type="radio"></td>
+        </tr>
+        <tr>
+            <td>type="checkbox":</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <th colspan="2">&lt;select&gt; &lt;option&gt;; value: 選項的值(給server)</th>
+        </tr>
+        <tr>
+            <td>&lt;select&gt; &lt;option&gt;:</td>
+            <td>
+                <select>
+                    <option value="op1">選項一</option>
+                    <option value="op2">選項二</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">&lt;datalist&gt; &lt;option&gt;; value: 選項的值</th>
+        </tr>
+        <tr>
+            <td>&lt;datalist&gt; &lt;option&gt;:</td>
+            <td>
+                <input type="text" list="opList">
+                <datalist id="opList">
+                    <option value="選項一">
+                    <option value="選項二">
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">&lt;ol&gt; &lt;li&gt;; value: 項目編號的值</th>
+        </tr>
+        <tr>
+            <td>&lt;ol&gt; &lt;li&gt;:</td>
+            <td>
+                <ol>
+                    <li value="5">項目一</li>
+                    <li>項目二</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

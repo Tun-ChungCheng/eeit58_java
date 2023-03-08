@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h4>JavaScript Date Objects</h4>
+        <p>
+            <a href="https://www.w3schools.com/js/js_dates.asp"
+                >https://www.w3schools.com/js/js_dates.asp</a
+            >
+        </p>
+        <h4>JavaScript Get Date Methods</h4>
+        <p>
+            <a href="https://www.w3schools.com/js/js_date_methods.asp"
+                >https://www.w3schools.com/js/js_date_methods.asp</a
+            >
+        </p>
+        <hr />
+        <pre>
+    生成日期物件的方法：
+        new Date()
+        new Date(milliseconds)
+        new Date(dateString)
+        new Date(year, month, day, hours, minutes, seconds, milliseconds)
+    </pre
+        >
+
+        <script>
+            // 宣告一個時間物件
+            const now = new Date()
+            console.log(now)
+
+            // 取得年份
+            console.log(now.getFullYear())
+            // 取得月份 (請注意這裡)
+            console.log(now.getMonth() + 1)
+            // 取得日期
+            console.log(now.getDate())
+            // 取得星期 (請注意這裡)
+            console.log(now.getDay())
+            // 取得時間
+            console.log(now.getHours())
+            // 取得分鐘
+            console.log(now.getMinutes())
+            // 若日期物件生成後，我們需要加一天
+
+            // 若日期物件生成後，我們需要加一個月
+
+            // 小練習：如何透過日期的加減，取得這個月的最後一天?
+
+            // 小練習：宣告兩個日期物件，並指定日期後，進行日期相減
+            // millisecond = 86400000 = 1000*60*60*24
+            console.clear()
+
+            const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0)
+
+            const diff = (lastDay.getTime() - now.getTime()) / 86400000
+
+            console.log(`距離 ${now.getMonth() + 1} 月底還有 ${diff} 天`)
+        </script>
+    </body>
+</html>

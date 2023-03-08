@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <p>來東京冒險吧！٩(｡・ω・｡)و航海王史上首創！！大型主題樂園！！</p>
+        <p>草帽一行人的地盤在東京的象徵‧東京鐵塔！僅在此才可以體驗的遊樂設施</p>
+        <p>
+            觀賞現場娛樂表演、享受美食的餐廳和購買限定商品的商店等‧‧草帽一行人為您準備了很多的冒險
+        </p>
+        <p>等待您的光臨！！</p>
+        <p>ก็ʕ•͡ᴥ•ʔ ก้</p>
+
+        <script>
+            // 試試看
+            $(document).ready(function () {
+                // 10. 在body裡面加一顆按鈕，名稱叫做放大
+
+                // 20. 按鈕點選一次，文字大小增加2px， 慢慢放大
+
+                const enlargeBtn = '<button >Enlarge</button>'
+
+                $('body').append(enlargeBtn)
+
+                $('button').on('click', () => {
+                    $('p').css('fontSize', '+=2')
+                })
+            })
+        </script>
+    </body>
+</html>

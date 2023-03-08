@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <button id="btnAdd">附加清單</button>
+        <hr />
+        <div>
+            <h4>底下是清單</h4>
+            <ol>
+                <li>LINE Pay</li>
+                <li>Apple Pay</li>
+                <li>信用卡</li>
+            </ol>
+        </div>
+
+        <script>
+            btnAdd.onclick = function () {
+                const myList = $('ol')
+
+                myList.before('<li>悠遊卡</li>')
+                myList.after('<li>悠遊卡</li>')
+                myList.prepend('<li>悠遊卡</li>')
+                myList.append('<li>悠遊卡</li>')
+                // myList.appendTo('<li>悠遊卡</li>')
+                // 10. 測試 + 比較底下幾種方法的差異:
+                //    $().before()
+                //    $().after()
+                //    $().prepend()
+                //    $().append()
+                //    $().appendTo()
+            }
+        </script>
+    </body>
+</html>

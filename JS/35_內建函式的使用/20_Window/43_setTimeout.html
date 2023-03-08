@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- 更新網址的寫法 1 -->
+        <!-- <meta http-equiv="refresh" content="0;url=https://one-piece.com/" />-->
+    </head>
+
+    <body>
+        <h4>指定的秒數<span style="color: red">後</span>，做指定的事情</h4>
+        <p>
+            <a href="https://www.w3schools.com/jsref/met_win_settimeout.asp"
+                >setTimeout()</a
+            >
+        </p>
+
+        <script>
+            // 更新網址的寫法 2 document.location.href
+            setTimeout(() => {
+                document.location.href = 'https://google.com'
+            }, 1000)
+        </script>
+    </body>
+</html>

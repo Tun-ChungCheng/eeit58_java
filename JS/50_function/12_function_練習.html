@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <script>
+            // 小練習：設計一個function，傳入數量和單價
+            //        數量10杯以上總金額打95折，20杯以上打9折
+            const quantity = window.prompt('數量')
+            const price = window.prompt('單價')
+
+            function calculate(quantity, price) {
+                if (quantity > 20) return quantity * price * 0.9
+                else if (quantity > 10) return quantity * price * 0.95
+                else return quantity * price
+            }
+
+            window.alert(calculate(quantity, price))
+        </script>
+    </body>
+</html>

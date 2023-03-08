@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h4>IIFE = Immediately Invoked Function Expression</h4>
+        <h4>在函式宣告的當下立即呼叫</h4>
+        <p>
+            <a href="https://www.w3schools.com/js/js_function_definition.asp"
+                >https://www.w3schools.com/js/js_function_definition.asp</a
+            ><small> 連結開啟後，請往下找到 Self-Invoking Functions 段落</small>
+        </p>
+
+        <script>
+            // 10. 宣告函式 showMsg() 並且呼叫
+
+            // 20. 宣告函式後直接呼叫 - 使用 函式宣告 的方法
+            ;(function foo() {
+                console.log('foo')
+            })()
+
+            // 30. 宣告函式後直接呼叫 - 使用 函式運算式 的方法
+            let test = (function foo() {
+                console.log('foo')
+            })()
+            // 40. 新增一個變數，存放 函式運算式
+            //     立即執行後，呼叫這個變數的話，會得到什麼？
+
+            // 50. 用 () 包起來一個匿名的函式
+
+            console.log(test)
+        </script>
+    </body>
+</html>

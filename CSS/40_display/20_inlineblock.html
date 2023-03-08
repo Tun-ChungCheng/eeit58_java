@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <h3>display:block 區塊，元素的寬度預設會撐到最大。</h3>
+        <div class="demo">
+            <div id="reddiv_A">Red</div>
+            <div id="greendiv_A">Green</div>
+            <div id="bluediv_A">Blue</div>
+        </div>
+
+        <hr />
+
+        <h3>display:inline-block 直譯：在一行裡面的區塊。</h3>
+        <!-- 試試看，在 Red、Green、Blue 的 div 裡面加上 style="display:inline-block;" -->
+        <div class="demo">
+            <div style="display: inline-block" id="reddiv_B">Red</div>
+            <div
+                style="display: inline-block; margin-left: -4px"
+                id="greendiv_B"
+            >
+                Green
+            </div>
+            <div style="display: inline-block" id="bluediv_B">Blue</div>
+        </div>
+
+        <pre>
+        為什麼在div之間有空格？
+            1. 試試看在 demo 的div 加上style="font-size: 0px; letter-spacing: 0px;word-spacing: 0px;"
+            2. 試試看在 綠色的div 裡面加上margin-left: -4px;
+    </pre
+        >
+    </body>
+</html>

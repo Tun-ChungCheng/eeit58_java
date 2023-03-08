@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <h5>Hello!</h5>
+
+        <script>
+            // 10. 透過 $().on() 掛載 click 事件到 h5
+            //   * click 後改變 h5 的內容
+            $('h5').on('click', () => {
+                console.log($('h5'))
+                $('h5').text('foo')
+            })
+        </script>
+    </body>
+</html>

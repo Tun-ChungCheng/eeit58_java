@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <h3 id="t--">Hello</h3>
+
+        <span id="a+b">1</span>
+        <span id="a-b">2</span>
+        <span id="a*b">3</span>
+        <span id="a／b">4</span>
+
+        <script>
+            // 10. 挑選 h3 元素，並且將抓取裡面的內容
+            //      目標：取得 Hello 文字
+
+            console.log($('h3').text())
+
+            // 20. 透過 jQuery 的方式抓取內容
+            //      目標：取得 1 ~ 4
+
+            // console.log($('span').text())
+            console.log($('#a+b').text()) // ?
+            console.log($('#a-b').text())
+            console.log($('#a*b').text()) // ?
+            console.log($('#a／b').text())
+            // 30. 透過 JavaScript 的方式抓取內容
+            //      目標：取得 1 ~ 4
+
+            console.log('-------------------------------')
+            console.log(document.getElementById('a+b').innerText)
+            console.log(document.getElementById('a-b').innerText)
+            console.log(document.getElementById('a*b').innerText)
+            console.log(document.getElementById('a／b').innerText)
+        </script>
+    </body>
+</html>

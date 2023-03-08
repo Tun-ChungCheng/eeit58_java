@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <style>
+      /* Child Selector (子選擇器)(>) */
+      div > h1 {
+        background-color: skyblue;
+      }
+
+      /* Descendant Selector (子孫選擇器)(space) */
+      div h1 {
+        background-color: cadetblue;
+      }
+      /* Adjacent Sibling Selector (相鄰兄弟選擇器)(+) */
+      div + h1 {
+        background-color: saddlebrown;
+      }
+      /* General Sibling Selector (全體兄弟選擇器)(~) */
+      div ~ h1 {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+
+  <body>
+    div是爸爸
+    <div>
+      <h1>兒子-1</h1>
+      <section>
+        <h1>孫子</h1>
+        <section>
+          <h1>曾孫</h1>
+        </section>
+      </section>
+      <h1>兒子-2</h1>
+    </div>
+    <p>隔壁鄰居-2</p>
+    <h1>伯父</h1>
+    <h1>叔叔</h1>
+    <p>隔壁鄰居-1</p>
+  </body>
+</html>

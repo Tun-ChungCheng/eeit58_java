@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <p id="memo">點選圖片後，放大圖片和文字</p>
+
+        <!-- 10. 設定一張圖片 -->
+        <img onclick="zoomInAndOut()" id="foo" src="/offline_normal.png" />
+        <script>
+            // 20. 網頁的 圖片的 樣式的 寬度 改變
+
+            // 21. 網頁的 圖片的 樣式的 高度 改變
+
+            // 22. 網頁的 memo的 樣式的 字型 改變
+            let isPressed = false
+
+            const imgStyle = document.getElementById('foo').style
+            const originalWidth = imgStyle.width
+            const originalHeight = imgStyle.height
+
+            const text = document.getElementById('memo')
+
+            const textStyle = document.getElementById('memo').style
+            const originalTextFont = window
+                .getComputedStyle(text, null)
+                .getPropertyValue('font-size')
+            const originalTextFontFamily = textStyle.fontFamily
+
+            let fontSize = parseInt(originalTextFont)
+            console.log(fontSize)
+            function zoomInAndOut() {
+                if (isPressed) {
+                    isPressed = false
+
+                    imgStyle.width = '1000px'
+                    imgStyle.height = '500px'
+
+                    textStyle.fontFamily = 'Noto Sans CJK TC'
+                } else {
+                    isPressed = true
+
+                    imgStyle.width = originalWidth
+                    imgStyle.height = originalHeight
+
+                    textStyle.fontFamily = originalTextFontFamily
+                }
+
+                fontSize = fontSize + 1
+                console.log(fontSize)
+                textStyle.fontSize = fontSize + 'px'
+            }
+        </script>
+    </body>
+</html>

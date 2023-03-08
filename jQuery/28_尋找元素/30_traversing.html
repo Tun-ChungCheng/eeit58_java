@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/30_traversing.css" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <button id="btnPickItem">挑選</button>
+        <hr />
+
+        <div id="tw">
+            <h4>台灣水果</h4>
+            <ul id="twList">
+                <li class="grape">巨峰葡萄</li>
+                <li>金鑽鳳梨</li>
+                <li>麻豆文旦</li>
+                <li>小玉西瓜</li>
+                <li>大湖草莓</li>
+            </ul>
+        </div>
+
+        <div id="jp">
+            <h4>日本水果</h4>
+            <ul id="jpList">
+                <li><b class="grape">麝香葡萄</b></li>
+                <li><b>夕張哈密瓜</b></li>
+                <li><b>甘王草莓</b></li>
+                <li><b>愛媛柑橘</b></li>
+                <li><b>岡山白桃</b></li>
+            </ul>
+        </div>
+
+        <div id="demo"></div>
+
+        <script>
+            // * 比較底下幾種 尋找|篩選 元素的方式 *
+
+            // 10. filter   ===> $().filter()
+            // 11. find     ===> $().find()
+            console.log($('ul').filter('#twList'))
+            console.log($('ul').find('li'))
+            // 14. closest  ===> $().closest()
+            // 15. eq       ===> $().eq()
+            console.log($('ul').closest('li'))
+            console.log($('ul').eq(0))
+
+            console.clear()
+
+            btnPickItem.onclick = function () {
+                $('li').filter(function (idx, el) {
+                    if (this.innerText.indexOf('草莓') !== -1)
+                        console.log(this.innerText)
+                })
+            }
+        </script>
+    </body>
+</html>

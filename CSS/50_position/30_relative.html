@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/position.css" />
+        <style>
+            /* 01. 將 #greendiv 設定 position: relative，觀察 藍色 div 的位置變化 */
+            /* 02. 改變 #greendiv top、bottom、left、right 屬性，觀察 綠色 元素的移動位置 */
+            #greendiv {
+                position: relative;
+                top: 100px;
+                bottom: 100px;
+                left: 100px;
+                right: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>
+            position：relative；如果沒有設定 top、bottom、left、right；表現會和
+            static 一樣
+        </h3>
+        <h3>relative 相對位置，相對於原本的位置</h3>
+
+        <div class="demo">
+            <div id="reddiv">Red 200*200</div>
+            <div id="greendiv">Green 150*300；<br />position: relative;</div>
+            <div id="bluediv">Blue 300*700</div>
+        </div>
+    </body>
+</html>

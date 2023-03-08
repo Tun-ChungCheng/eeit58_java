@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <th> 和 <td> 的屬性 -->
+    <!-- colspan: 跨欄合併儲存格 -->
+    <!-- rowspan: 跨列合併儲存格 -->
+
+    <!-- 參照 20_合併儲存格.png 建立一個表格，第一列是標題列 -->
+
+    <!--  (標題列)第一列： A   B   C   D  -->
+    <!--         第二列： A1  B1  C1  D1  -->
+    <!--         第三列： A2  B2  C2  D2  -->
+    <!--         第四列： A3  B3  C3  D3  -->
+    <!--         第五列： A4  B4  C4  D4  -->
+
+    <!-- step1. 加入 <table> -->
+    <!-- step2. 在 <table> 內加入 5 個列 <tr> -->
+    <!-- step3. 第一列 加入 4 個標題欄位: <th> -->
+    <!-- step4. 第二~五列分別 加入 4 個欄位: <td> -->
+    <!-- step5. 合併跨列和跨欄的儲存格 -->
+    <!-- step6. 將 "被合併的儲存格" 移除 -->
+
+    <table>
+      <tr>
+        <th colspan="2">A</th>
+        <!-- <th>B</th> -->
+        <th colspan="2">C</th>
+        <!-- <th>D</th> -->
+      </tr>
+      <tr>
+        <td rowspan="4">A1</td>
+        <td>B1</td>
+        <td>C1</td>
+        <td>D1</td>
+      </tr>
+      <tr>
+        <!-- <td>A2</td> -->
+        <td>B2</td>
+        <td>C2</td>
+        <td>D2</td>
+      </tr>
+      <tr>
+        <!-- <td>A3</td> -->
+        <td>B3</td>
+        <td>C3</td>
+        <td>D3</td>
+      </tr>
+      <tr>
+        <!-- <td>A4</td> -->
+        <td>B4</td>
+        <td>C4</td>
+        <td>D4</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <script>
+            // 20. createElement 增加一個元素 (img)
+            // 21. setAttribute  設定新增元素的屬性
+            // 22. appendChild   直接在Html文件中增加元素
+            let count = 0
+            setInterval(function () {
+                count++
+
+                const imgElement = document.createElement('img')
+                imgElement.setAttribute('src', '/offline_normal.png')
+                imgElement.setAttribute('id', `pic${count}`)
+                document.body.appendChild(imgElement)
+            }, 1000)
+        </script>
+    </body>
+</html>

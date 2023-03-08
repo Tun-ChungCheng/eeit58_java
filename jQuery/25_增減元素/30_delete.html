@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/25_delete.css" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+    </head>
+
+    <body>
+        <h4>Category: DOM Removal</h4>
+        <p>
+            <a href="https://api.jquery.com/category/manipulation/dom-removal/"
+                >https://api.jquery.com/category/manipulation/dom-removal/</a
+            >
+        </p>
+        <hr />
+
+        <button id="btnDetach">detach</button>
+        <button id="btnEmpty">empty</button>
+        <button id="btnRemove">remove</button>
+        <button id="btnUnwrap">unwrap</button>
+        <hr />
+
+        <button id="btnDiff">比較差異</button>
+
+        <script>
+            // 10. 試著比較出 empty() 和 remove() 的差異
+            // 20. 試著比較出 detach() 和 remove() 的差異
+            // $('#btnDetach').detach()
+
+            //      * jQuery 綁定事件的方法之一: $().on('事件名稱', function(){})
+            $('#btnDiff').on('click', () => {
+                $('#btnDetach').detach()
+                $('#btnEmpty').empty()
+                $('#btnRemove').remove()
+                $('#btnUnwrap').unwrap()
+            })
+        </script>
+    </body>
+</html>

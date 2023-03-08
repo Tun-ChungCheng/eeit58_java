@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <style>
+            /* a 元素 href 屬性 為 http 開頭(^)，將 字體大小調整為 2rem */
+            a[href^='http'] {
+                font-size: 2rem;
+            }
+
+            /* a 元素 href 屬性 包含(*) pseudo 文字，將 文字顏色設定為 tomato */
+            a[href*='pseudo'] {
+                color: tomato;
+            }
+
+            /* a 元素 href 屬性 為 selectors.asp 結尾($)，將 背景顏色設定為 lightblue */
+            a[href$='selectors.asp'] {
+                background-color: lightblue;
+            }
+
+            /* a 元素 target  完全等於 _blank， 移除文字底線 */
+            a[target='_blank'] {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>
+            <a
+                href="https://www.w3schools.com/css/css_selectors.asp"
+                target="_blank"
+                >Simple Selectors</a
+            >
+        </p>
+        <p>
+            <a
+                href="https://www.w3schools.com/css/css_combinators.asp"
+                target="_blank"
+                >Combinators</a
+            >
+        </p>
+        <p>
+            <a
+                href="https://www.w3schools.com/css/css_pseudo_classes.asp"
+                target="_blank"
+                >Pseudo-classes</a
+            >
+        </p>
+        <p>
+            <a
+                href="https://www.w3schools.com/css/css_pseudo_elements.asp"
+                target="_blank"
+                >Pseudo-elements</a
+            >
+        </p>
+        <p>
+            <a
+                href="https://www.w3schools.com/css/css_attribute_selectors.asp"
+                target="_blank"
+                >Attribute Selectors</a
+            >
+        </p>
+        <p>
+            <a href="https://www.w3schools.com/cssref/trysel.asp">線上試試看</a>
+        </p>
+    </body>
+</html>

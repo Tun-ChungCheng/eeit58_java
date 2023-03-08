@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        background-image: url('img/backimg.jpg');
+        background-repeat: no-repeat;
+      }
+      table {
+        border-collapse: outset;
+      }
+
+      
+
+      table,
+      th,
+      td {
+        border: 1px solid #ac915d;
+        border-style: dotted;
+      }
+
+      th {
+        color: #ac915d;
+      }
+
+      .opname {
+        color: #ac915d;
+        height: 30px;
+      }
+      .opdesc {
+        color: white;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 參照 30_table練習完成圖.png 建立一個表格 -->
+
+    <!-- step1. 在<body>裡面放入一個表格 -->
+    <!--  (標題列)第一列： A   B   C   D  -->
+    <!--         第二列： A1  B1  C1  D1  -->
+    <!--         第三列： A2  B2  C2  D2  -->
+    <!--         第四列： A3  B3  C3  D3  -->
+    <!--         第五列： A4  B4  C4  D4  -->
+
+    <!-- step2. 合併儲存格，並移除"被合併的儲存格" -->
+
+    <!-- step3. 放入圖片和對應文字 -->
+    <!-- 海賊王人物列表
+    魯夫：左眼下方有疤痕，是為了向「紅髮」傑克証明自己的勇敢，自己用刀劃傷而留下的
+    索隆：專長：迷路，和捲眉毛吵架
+    娜美：據說尾田是參考老婆的樣子畫出娜美的
+    騙人布：草帽海賊團的狙擊手 -->
+
+    <!-- step4. 調整字型顏色: #AC915D、white -->
+    <!-- step5. 欄位高度、欄位寬度：height: 30px (角色名)、width: 200px (說明欄) -->
+    <!-- step6. 加入網頁背景底圖：background-image: url("img/backimg.jpg") -->
+    <table>
+      <tr>
+        <th colspan="4">海賊王人物列表</th>
+      </tr>
+      <tr>
+        <td rowspan="2"><img src="img/op_01.jpg" /></td>
+        <td class="opname">魯夫</td>
+        <td rowspan="2"><img src="img/op_02.jpg" /></td>
+        <td class="opname">索隆</td>
+      </tr>
+      <tr>
+        <td class="opdesc">
+          左眼下方有疤痕，是為了向「紅髮」傑克証明自己的勇敢，自己用刀劃傷而留下的
+        </td>
+        <td class="opdesc">專長：迷路，和捲眉毛吵架</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><img src="img/op_03.jpg" /></td>
+        <td class="opname">娜美</td>
+        <td rowspan="2"><img src="img/op_04.jpg" /></td>
+        <td class="opname">騙人布</td>
+      </tr>
+      <td class="opdesc">
+        據說尾田是參考老婆的樣子畫出娜美的
+      </td >
+      <td class="opdesc">草帽海賊團的狙擊手</td>
+      </tr>
+
+      <tr></tr>
+    </table>
+  </body>
+</html>

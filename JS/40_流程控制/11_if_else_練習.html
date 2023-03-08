@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <script>
+            // 1. 取得系統現在時間(HH)
+            // 2. 如果是 8點 ~ 11點，顯示上午課程
+            // 3. 如果是 12點，顯示中午用餐時間
+            // 4. 如果是 13點 ~ 16點，顯示下午課程
+            // 5. 其他的時段，顯示非課程時間
+            // 6. 透過三元運算子，判斷現在是 'AM' 還是 'PM'
+            const now = new Date()
+
+            let hour = now.getHours()
+
+            if (8 < hour && hour < 11) console.log('上午課程')
+            else if (12 === hour) console.log('中午用餐時間')
+            else if (13 < hour && hour < 16) console.log('下午課程')
+            else console.log('非課程時間')
+
+            let isAm = true
+            hour / 12 ? (isAm = false) : (isAm = true)
+
+            if (isAm) console.log('是Am')
+            else console.log('是Pm')
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+
+        <!-- 10. 請觀察這些 log 的順序 -->
+        <script>
+            console.log('A. 寫在 head ')
+        </script>
+    </head>
+
+    <body>
+        <h4>jQuery Syntax</h4>
+        <p>
+            <a href="https://www.w3schools.com/jquery/jquery_syntax.asp"
+                >https://www.w3schools.com/jquery/jquery_syntax.asp</a
+            >
+        </p>
+
+        <h4>jQuery()</h4>
+        <p>
+            <a href="https://api.jquery.com/jQuery/"
+                >https://api.jquery.com/jQuery/</a
+            >
+        </p>
+
+        <h4>$(document).ready()</h4>
+        <p>
+            <a href="https://api.jquery.com/ready/#entry-longdesc"
+                >https://api.jquery.com/ready/#entry-longdesc</a
+            >
+        </p>
+
+        <script>
+            // 30. 測試 $(document).ready() ;
+
+            $(document).ready(console.log('測試 $(document).ready()'))
+
+            $(function () {
+                console.log('測試 $(function (){})')
+            })
+        </script>
+
+        <!-- 20. 請觀察這些 log 的順序 -->
+        <script>
+            console.log('B. 寫在 body ')
+        </script>
+    </body>
+</html>

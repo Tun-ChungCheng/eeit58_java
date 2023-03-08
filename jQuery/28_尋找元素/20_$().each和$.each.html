@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="../_js/jquery-3.6.0.js"></script>
+        <style>
+            .example {
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h4>$().each()</h4>
+        <p>
+            <a href="https://api.jquery.com/each/"
+                >https://api.jquery.com/each/</a
+            >
+        </p>
+
+        <h4>jQuery.each()</h4>
+        <p>
+            <a href="https://api.jquery.com/jquery.each/"
+                >https://api.jquery.com/jquery.each/</a
+            >
+        </p>
+
+        <h4>$ vs $()</h4>
+        <p>
+            <a
+                href="https://learn.jquery.com/using-jquery-core/dollar-object-vs-function/"
+                >https://learn.jquery.com/using-jquery-core/dollar-object-vs-function/</a
+            >
+        </p>
+        <hr />
+
+        <h3>apple</h3>
+        <h3>bee</h3>
+        <h3>cat</h3>
+
+        <script>
+            // 10. 畫面準備好以後才開始執行
+            $(function () {
+                // 20. $().each(): 逐項取得所有 h3 元素 裡面的文字
+                $('h3').each(function (index) {
+                    console.log(index + ': ' + $(this).text())
+                })
+                // 21. 將所有 h3 元素的文字改為斜體
+                $('h3').each(function (idx, e) {
+                    // $(this).addClass('example')
+                    $(this).html(`<i>${$(e).text()}</i>`)
+                })
+                // 30. $.each(): 讀出陣列裡面的項目
+                var list = ['dog', 'egg']
+
+                list.each((e) => {
+                    console.log(e)
+                })
+            })
+        </script>
+    </body>
+</html>

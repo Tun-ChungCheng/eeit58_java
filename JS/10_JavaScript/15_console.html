@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h4>Chrome 開發者工具</h4>
+        <p>
+            <a href="https://developer.chrome.com/docs/devtools/#console"
+                >https://developer.chrome.com/docs/devtools/#console</a
+            >
+        </p>
+
+        <script>
+            // 練習和觀察底下指令在 console 有怎麼樣的呈現
+
+            // 10. console.log()
+            console.log('log')
+            // 20. console.error()、console.warn()
+            console.error('error')
+            console.warn('warn')
+            // 30. console.clear()
+            console.clear()
+
+            // 40. 底下程式碼請直接取消註解查看效果
+            console.table(['apple', 'bee', 'cat'])
+
+            // 45. 底下程式碼請直接取消註解查看效果
+            console.time()
+            for (var i = 0; i < 100000; i++) {
+                let square = i ** 2
+            }
+            console.timeEnd()
+
+            // 50.
+            console.group()
+            console.table(['apple', 'bee', 'cat'])
+            console.table(['apple', 'bee', 'cat'])
+
+            console.groupEnd()
+
+            // 55.
+            console.groupCollapsed()
+            console.table(['apple', 'bee', 'cat'])
+            console.table(['apple', 'bee', 'cat'])
+
+            console.groupEnd()
+        </script>
+    </body>
+</html>

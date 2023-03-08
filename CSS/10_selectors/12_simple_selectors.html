@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 1.CSS會區分文字大小寫 -->
+    <!-- 2.CSS註解方式為 /* */ -->
+    <!-- 3.如果屬性值包含空白，記得將屬性值前後加上雙引號或者單引號 -->
+
+    <style>
+      /*   基本類型: 標籤(tag name)、#id、.class、*   */
+
+      /* Type selector (類型選擇器)。使用 標籤(tag name) 挑選元素並設定樣式 */
+      h1 {
+        color: red;
+      }
+      /* ID selector (ID選擇器)。使用 #id 挑選元素並設定樣式 */
+      #pikachu {
+        color: blue;
+      }
+      /* Class selector (類別選擇器)。使用 .class 挑選元素並設定樣式 */
+      .pokemon {
+        background-color: aqua;
+      }
+
+      .fire {
+        border: 1px red solid;
+      }
+      /* Universal selector (萬用選擇器)。使用 * 設定樣式 */
+      * {
+        background: rebeccapurple;
+      }
+      h1,
+      h2,
+      h3 {
+        font-size: 72px;
+      }
+      /* 兩者以上使用逗號隔開 */
+    </style>
+  </head>
+
+  <body>
+    <h1 class="pokemon fire">h1</h1>
+    <h2 id="pikachu">h2</h2>
+    <h3 class="pokemon">h3</h3>
+    <h4 class="pokemon">h4</h4>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+  <body>
+    <!-- 參照 20_form_input_types_完成圖.png 製作一份表單 -->
+
+    <!-- step1: 標題 -->
+    <!-- step2: 加入一個表單 <form> -->
+    <!-- step3. 在 <form> 表單內 加入 用餐地點 / 時段 / 人數 <fieldset> 群組標籤 和 <legend> 並給予說明 -->
+
+    <!-- step4. 在表單 <form> 內加入 用餐地點 和 <input type="radio"> -->
+    <!--     id：識別某個HTML文件上的元素 -->
+    <!--   name：做為radio、checkbox的分組 ; 讓伺服器識別 -->
+
+    <!-- step5. 在表單 <form> 內加入 用餐時段 <label> 和 <input type="date">
+                和 時間選單 <select> -->
+
+    <!-- step6. 在表單 <form> 內加入 訂位人數 <label> 和 <input type="number" min="1" max="20" value="1"> -->
+    <!--   min: 下限值 -->
+    <!--   max: 上限值 -->
+    <!-- value: 預設值 -->
+
+    <!-- step7. 在 <form> 表單內 加入 訂位資訊 <fieldset> 群組標籤 和 <legend> 並給予說明 -->
+    <!-- step8. 在表單 <form> 內加入 姓名 <label> 和輸入欄位 <input type="text"> -->
+    <!-- step9. 在表單 <form> 內加入 電話 <label> 和輸入欄位 <input type="tel"> -->
+
+    <h3>restaurant</h3>
+    <form>
+      <fieldset>
+        <legend>Register</legend>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" />
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" />
+
+        <input type="date" />
+        <select style="display: inline">
+          <option>12:00</option>
+          <option>17:00</option>
+        </select>
+
+        <label for=""> Order(Max 20 people):</label>
+        <input type="number" max="20" min="1" value="3" />
+      </fieldset>
+
+      <input name="loc" type="radio" />
+      <label for="loc">a</label>
+
+      <input name="loc" type="radio" />
+      <label for="loc">b</label>
+
+      <input name="loc" type="radio" />
+      <label for="loc">c</label>
+    </form>
+  </body>
+</html>

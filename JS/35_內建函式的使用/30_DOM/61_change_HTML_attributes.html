@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h3>點選圖片後，置換成另外一張圖片</h3>
+
+        <!-- 10. 設定一張圖片 -->
+        <img id="myImg" onclick="test()" src="/offline_normal.png" alt="" />
+        <script>
+            // 11. 取得上一個步驟的圖片
+            let image = document.getElementById('myImg')
+            // 20. 設定點選圖片後，換成另外一張圖片
+            let images = [
+                '/offline_normal.png',
+                '/offline_squat.png',
+                '/21_pseudo_class_完成圖.png',
+            ]
+            let count = 0
+            function test() {
+                count++
+                image.src = images[count % images.length]
+            }
+        </script>
+    </body>
+</html>

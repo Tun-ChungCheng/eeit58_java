@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h4>JavaScript HTML DOM EventListener</h4>
+        <p>
+            <a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp"
+                >https://www.w3schools.com/js/js_htmldom_eventlistener.asp</a
+            >
+        </p>
+        <hr />
+
+        <div>
+            <label for="userPhone">請輸入手機號碼：</label><br />
+            <input type="text" id="userPhone" /><br /><br />
+            <button id="btnLogin">登入</button>
+        </div>
+
+        <script>
+            // 10. 檢查手機號碼必須為10碼
+            // * 透過 addEventListener 綁定事件
+            const btnLoginEl = document.getElementById('btnLogin')
+            var inputValue = document.getElementById('userPhone').value
+            console.log(inputValue.length)
+
+            function check() {
+                console.log(inputValue.length)
+
+                if (inputValue >= 10) window.alert('pass')
+                else window.alert('not pass')
+            }
+
+            btnLoginEl.addEventListener('click', check)
+        </script>
+    </body>
+</html>
